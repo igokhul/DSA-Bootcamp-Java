@@ -22,9 +22,9 @@ public class SubSequenceOfArray {
         // Take It
         list.add(nums[index]);
         helperRecursion(nums, index + 1, list);
+        list.remove(list.size() - 1);
 
         // Leave It
-        list.remove(list.size() - 1);
         helperRecursion(nums, index + 1, list);
     }
 }
